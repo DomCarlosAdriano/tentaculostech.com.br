@@ -21,7 +21,7 @@ const GlowButton = ({ children, onClick, className  }) => {
 
     setTimeout(() => ripple.remove(), 600);
 
-    window.open("https://wa.me/5582993647023", "_blank");
+    window.open("https://wa.me/5582991286255", "_blank");
 
     if (onClick) onClick(e);
   };

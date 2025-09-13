@@ -1,5 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import GlowButton from "../GlowButton";
+import { Fade } from "react-awesome-reveal";
+
 
 const VSLSection = ({ menuOpen }) => {
   const videoRef = useRef(null);
@@ -36,6 +38,7 @@ const VSLSection = ({ menuOpen }) => {
     <section className="text-white flex justify-center py-16 px-4 md:py-20">
       <div className="max-w-4xl w-full flex flex-col items-center">
         {/* Texto */}
+           <Fade direction="up" delay={150} cascade damping={0.1} triggerOnce>
         <div className="text-center mb-12 md:mb-16 px-2">
           <h2 className="font-rajdhani font-bold text-3xl md:text-4xl lg:text-5xl mb-4 leading-tight">
             Transforme Sua Presença Digital <br className="hidden sm:block"/>
@@ -49,8 +52,10 @@ const VSLSection = ({ menuOpen }) => {
             acessível e estratégica.
           </p>
         </div>
+        </Fade>
 
         {/* Vídeo */}
+        <Fade direction="up" delay={150} cascade damping={0.1} triggerOnce>
         <div className="w-full flex flex-col items-center">
           <div className="relative w-full max-w-3xl rounded-xl border border-white/10 backdrop-blur-md bg-white/5 shadow-lg hover:shadow-xl transition-all duration-300">
             <div className="relative aspect-video bg-black overflow-hidden rounded-xl">
@@ -86,6 +91,7 @@ const VSLSection = ({ menuOpen }) => {
             <GlowButton className=" mt-7 md:mt-8 ">Saiba Mais</GlowButton>
           )}
         </div>
+        </Fade>
       </div>
     </section>
   );

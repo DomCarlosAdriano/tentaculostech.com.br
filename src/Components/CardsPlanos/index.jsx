@@ -1,4 +1,6 @@
 import React from "react";
+import { Fade } from "react-awesome-reveal";
+
 
 // importa suas imagens
 import cardWeb from "../../assets/card-web.svg";
@@ -9,13 +11,16 @@ const SectionCourseContent = () => {
   return (
     <section className="w-full bg-black text-white px-6 py-16">
       {/* Título */}
+      <Fade direction="up" delay={150} cascade damping={0.1} triggerOnce>
       <div className="max-w-4xl mx-auto text-center mb-12">
         <h2 className="text-2xl md:text-3xl font-semibold">
-          Conheça a <span className="font-bold">grade completa</span> do curso
+          Escolha o plano que melhor atende às <br/>necessidades da sua empresa
         </h2>
       </div>
+      </Fade>
 
       {/* Grid dos Cards */}
+      <Fade direction="up" delay={150} cascade damping={0.1} triggerOnce>
       <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
         {/* Card 1 */}
         <div className="rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
@@ -44,6 +49,7 @@ const SectionCourseContent = () => {
           />
         </div>
       </div>
+      </Fade>
     </section>
   );
 };
