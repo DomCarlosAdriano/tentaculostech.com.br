@@ -22,7 +22,7 @@ export default function MidjourneySection() {
               {/* Configurações extras */}
               <input type="hidden" name="_subject" value="Nova ideia enviada pelo site!" />
               <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_next" value="https://seusite.com/obrigado.html" />
+              <input type="hidden" name="_next" value="https://tentaculostech.com.br/obrigado" />
 
               {/* Nome */}
               <div>

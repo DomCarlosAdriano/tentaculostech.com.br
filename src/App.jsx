@@ -1,40 +1,19 @@
-import './App.css'
-
-import Hero from './Components/Hero'
-import Header from './Components/Header'
-import Card from './Components/Card'
-import ContratoProcesso from './Components/ContratoProcesso'
-import CardsPlanos from './Components/CardsPlanos'
-import Formulario from './Components/Formulario'
-import FAQSection from './Components/Faq'
-import VSLSection from './Components/VslSection'
-import NewsSection from './Components/NewSection'
-import TestimonialsSection from './Components/TestimonialsSection'
-import ContactSection from './Components/ContactSection'
-import ProjectsSection from './Components/ProjectsSection'
-import Footer from './Components/Footer'
-
+import "./App.css";
+import PaginaIndex from "./Components/PaginaIndex";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ThankYouPage from "./Components/ThankYouPage";
 
 function App() {
   return (
-    <div className="mx-auto">
-    {/* <Header />
-    <Hero /> */}
-    <NewsSection/>
-    <VSLSection/>
-    <Card/>
-    <TestimonialsSection/>
-    <ProjectsSection/>
-    <ContratoProcesso/>
-    <CardsPlanos/>
-    <Formulario/>
-    <FAQSection/>
-    <ContactSection/>
-    <Footer/>
-
-     
-   </div>
-  )
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<PaginaIndex />} />
+          <Route path="/obrigado" element={<ThankYouPage />} /> 
+        </Routes>
+      </BrowserRouter>
+    </>
+  );
 }
 
-export default App
+export default App;

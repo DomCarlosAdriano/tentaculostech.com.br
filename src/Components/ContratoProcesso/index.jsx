@@ -57,6 +57,20 @@ const ContratoProcesso = () => {
       z-[-90]
     "
       ></div>
+         <div
+        className="
+      absolute
+      w-[500px] h-[400px] 
+       bg-gradient-to-br from-[#1407D3] to-[#FF32FF] 
+      opacity-50 
+      filter blur-[150px] 
+      rounded-full
+      mix-blend-screen
+     left-[-200px] top-[400px]
+     hidden sm:block
+      z-0
+    "
+      ></div>
     </section>
   );
 };

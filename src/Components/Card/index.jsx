@@ -21,6 +21,20 @@ const Card = () => {
     "
       ></div>
 
+       <div
+        className="
+      absolute
+      w-[500px] h-[580px] 
+       bg-gradient-to-br from-[#1407D3] to-[#FF32FF] 
+      opacity-50 
+      filter blur-[150px] 
+      rounded-full
+      mix-blend-screen
+     right-[-180px] bottom-[0px]
+      z-0
+    "
+      ></div>
+
       <div className="max-w-4xl mx-auto space-y-20">
         {" "}
         {/* LIMITADOR */}
