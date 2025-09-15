@@ -16,8 +16,8 @@ import Footer from '../Footer'
 function PaginaIndex() {
   return (
     <div className="mx-auto">
-    {/* <Header />
-    <Hero /> */}
+     <Header />
+    <Hero /> 
     <NewsSection/>
     <VSLSection/>
     <Card/>

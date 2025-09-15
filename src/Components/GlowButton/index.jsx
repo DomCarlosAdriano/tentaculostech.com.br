@@ -50,7 +50,7 @@ const GlowButton = ({ children, onClick, className  }) => {
       onClick={handleClick}
       onMouseEnter={handleMouseEnter}
     >
-      {children} <span className={styles.arrow}>→</span>
+      {children} <span className={styles.arrow}></span>
     </button>
   );
 };

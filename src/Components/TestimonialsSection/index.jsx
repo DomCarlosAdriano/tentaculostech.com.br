@@ -1,20 +1,20 @@
 import React, { useMemo, useState } from "react";
 import ReactPaginate from "react-paginate";
-import img2 from "../../assets/dep2.png";
-import img1 from "../../assets/dep.png";
+import img2 from "../../assets/dep2.webp";
+import img1 from "../../assets/dep1.webp";
 import { Fade } from "react-awesome-reveal";
 
 const testimonials = [
   {
     id: 1,
     image: img1, // substitua pelo caminho real
-    subtitle: "Alto faturamento com as vendas do próprio Programa de Skincare",
+    subtitle: "Campanha de tráfego que gerou 100 leads em 24 horas",
   },
   {
     id: 2,
     image: img2,
     subtitle:
-      "20 consultorias no Brasil e exterior20 consultorias no Brasil e exterior20 consultorias no Brasil e exterior",
+      "Site de catálogo online para loja de ropas femininas com 1500 visitas no primeiro mês",
   },
   {
     id: 3,

@@ -2,7 +2,7 @@ import { Fade } from "react-awesome-reveal";
 
 export default function MidjourneySection() {
   return (
-    <section className="relative w-full bg-black text-white px-6 py-26 bg-cover bg-center lg:bg-[url('./hub.svg')]">
+    <section className="relative w-full bg-black text-white px-6 py-26 bg-cover bg-center">
       {/* Container principal */}
       <div className="relative max-w-5xl mx-auto text-center">
         
