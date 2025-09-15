@@ -12,7 +12,7 @@ export default function Header() {
 
         {/* Link estilizado */}
         <a
-          href="#contato"
+          href="https://wa.me/5582991286255"
           className="flex items-center gap-2 px-6 py-2 rounded-lg font-medium text-white 
                      border border-gray-400/50 
                      hover:border-[#5E3BEE] hover:text-[#5E3BEE] 

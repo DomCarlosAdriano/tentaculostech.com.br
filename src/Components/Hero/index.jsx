@@ -37,32 +37,32 @@ export default function HeroSection() {
       {/* Grid de imagens */}
       <div className="mt-30 grid grid-cols-2 md:grid-cols-3 gap-4 max-w-5xl">
         <img
-          src="https://picsum.photos/500/300?random=1"
+          src="/t2.webp"
           alt="hero 1"
           className="rounded-lg object-cover w-full h-full"
         />
         <img
-          src="https://picsum.photos/500/300?random=2"
+          src="/t5.webp"
           alt="hero 2"
           className="rounded-lg object-cover w-full h-full"
         />
         <img
-          src="https://picsum.photos/500/300?random=3"
+          src="/t4.webp"
           alt="hero 3"
           className="rounded-lg object-cover w-full h-full"
         />
         <img
-          src="https://picsum.photos/500/300?random=4"
+          src="/t6.webp"
           alt="hero 4"
           className="rounded-lg object-cover w-full h-full"
         />
         <img
-          src="https://picsum.photos/500/300?random=5"
+          src="/t1.webp"
           alt="hero 5"
           className="rounded-lg object-cover w-full h-full"
         />
         <img
-          src="https://picsum.photos/500/300?random=6"
+          src="/t3.webp"
           alt="hero 6"
           className="rounded-lg object-cover w-full h-full"
         />
