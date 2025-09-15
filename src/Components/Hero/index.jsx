@@ -16,7 +16,7 @@ export default function HeroSection() {
           Sites que Vendem: Mais Clientes, Mais Faturamento
         </p>
         <h1 className="text-4xl md:text-5xl font-bold text-white relative z-10">
-          Precisa Atrair Mais Clientes <br/>{" "}
+          Precisa Atrair Mais Clientes {" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1407D3] to-[#FF32FF]">
              Aumentar Seu Faturamento?
           </span>

@@ -8,14 +8,14 @@ const NewsSection = () => {
         {/* Título principal */}
          <Fade direction="up" delay={150} cascade damping={0.1} triggerOnce>
         <h2 className="font-rajdhani font-bold text-2xl md:text-3xl lg:text-4xl mb-4 leading-tight">
-          O quanto <span className="text-purple-400">você está perdendo</span> por <br/> não estar na internet? 
+          O quanto <span className="text-purple-400">você está perdendo</span> por não estar na internet? 
         </h2>
        
 
         {/* Subtítulo */}
       
         <p className="text-sm md:text-base text-gray-300 mb-8">
-          "Se seu negócio não está na internet ele não existe.""
+          "Se seu negócio não está na internet ele não existe."
         </p>
         </Fade>
 
