@@ -14,7 +14,7 @@ const SectionCourseContent = () => {
       <Fade direction="up" delay={150} cascade damping={0.1} triggerOnce>
       <div className="max-w-4xl mx-auto text-center mb-12">
         <h2 className="text-2xl md:text-3xl font-semibold">
-          Escolha o plano que melhor atende às <br/>necessidades da sua empresa
+          Escolha o plano que melhor atende às necessidades da sua empresa
         </h2>
       </div>
       </Fade>

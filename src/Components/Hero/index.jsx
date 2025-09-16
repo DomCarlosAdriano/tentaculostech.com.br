@@ -3,7 +3,7 @@ import GlowButton from "../GlowButton";
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full min-h-screen bg-black flex flex-col items-center justify-center px-6 py-20">
+    <section className="relative w-full min-h-screen bg-black flex flex-col items-center justify-center px-6 py-9">
       <div className="max-w-4xl text-center">
 
         {/* Glow animado atrás do título */}
