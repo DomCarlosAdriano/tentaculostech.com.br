@@ -1,17 +1,22 @@
 import React from "react";
 import GlowButton from "../GlowButton";
+import Preloader from "../Preloader";
+import { useImagesPreloader } from "../../hooks/useImagesPreloader";
 
 export default function HeroSection() {
+  const images = ["/t1.webp","/t2.webp","/t3.webp","/t4.webp","/t5.webp","/t6.webp"];
+  const loaded = useImagesPreloader(images);
+
+  if (!loaded) return <Preloader />;
+
   return (
     <section className="relative w-full min-h-screen bg-black flex flex-col items-center justify-center px-6 py-9">
       <div className="max-w-4xl text-center">
-
         {/* Glow animado atrás do título */}
-        <div className="absolute inset-0  flex items-center justify-center pointer-events-none  w-full h-fit top-10">
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none w-full h-fit top-10">
           <div className="w-[300px] h-[300px] rounded-full bg-gradient-to-r from-[#1407D3] to-[#FF32FF] blur-[100px] opacity-40"></div>
         </div>
 
-        {/* Texto do Hero */}
         <p className="text-sm text-purple-400 mb-2 relative z-10 font-semibold">
           Sites que Vendem: Mais Clientes, Mais Faturamento
         </p>
@@ -27,45 +32,16 @@ export default function HeroSection() {
           acessíveis. Fale conosco e solicite seu orçamento sem compromisso!
         </p>
 
-        {/* Botões */}
         <div className="mt-6 flex flex-wrap justify-center gap-4 relative z-10">
           <GlowButton>Solicitar Orçamento Gratuito</GlowButton>
-          
         </div>
       </div>
 
       {/* Grid de imagens */}
       <div className="mt-30 grid grid-cols-2 md:grid-cols-3 gap-4 max-w-5xl">
-        <img
-          src="/t2.webp"
-          alt="hero 1"
-          className="rounded-lg object-cover w-full h-full"
-        />
-        <img
-          src="/t5.webp"
-          alt="hero 2"
-          className="rounded-lg object-cover w-full h-full"
-        />
-        <img
-          src="/t4.webp"
-          alt="hero 3"
-          className="rounded-lg object-cover w-full h-full"
-        />
-        <img
-          src="/t6.webp"
-          alt="hero 4"
-          className="rounded-lg object-cover w-full h-full"
-        />
-        <img
-          src="/t1.webp"
-          alt="hero 5"
-          className="rounded-lg object-cover w-full h-full"
-        />
-        <img
-          src="/t3.webp"
-          alt="hero 6"
-          className="rounded-lg object-cover w-full h-full"
-        />
+        {images.map((src, i) => (
+          <img key={i} src={src} alt={`hero ${i+1}`} className="rounded-lg object-cover w-full h-full" />
+        ))}
       </div>
     </section>
   );
